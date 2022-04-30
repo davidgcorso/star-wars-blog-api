@@ -1,3 +1,26 @@
-/* 
-    General Styles
-*/
+@import url(https://allfont.net/allfont.css?fonts=star-jedi);
+body {
+  background-image: url(https://browsecat.net/sites/default/files/star-wars-landscape-wallpapers-121180-468988-5381442.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+.title{
+    font-family: 'Star Jedi', arial;
+    font-size: 70px;
+    color: rgb(255, 232, 31);
+    text-shadow: 0 0 5px #000000;
+}
+.card{
+    width: 18rem;
+}
+.cardsContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 80px;
+}
