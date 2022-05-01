@@ -5,7 +5,7 @@ import { Context } from "../store/appContext";
 
 import "../../styles/demo.css";
 
-export const Demo = () => {
+export const Vehicles = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
@@ -17,7 +17,7 @@ export const Demo = () => {
 							key={index}
 							className="list-group-item d-flex justify-content-between"
 							style={{ background: item.background }}>
-							<Link to={"/single/" + index}>
+							<Link to={"/vehicles/" + index}>
 								<span>Link to: {item.title}</span>
 							</Link>
 							{// Conditional render example
