@@ -59,3 +59,15 @@ h3{
 .footer {
     margin-top: 50px;
 }
+.itemDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+    width: 100%;
+}
+.paragraph {
+    padding: 30px;
+    width: 60%;
+}
