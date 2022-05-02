@@ -15,9 +15,9 @@ export const Planets = (props) => {
           <p className="card-text">
           Climate: {planet.info?.climate}
           </p>
-          <a href="#" className="btn btn-primary">
+          <Link to={`/planets/${planet.uid}`} className="btn btn-primary" >
             Details
-          </a>
+          </Link>
         </div>
       </div>
     );
@@ -31,7 +31,8 @@ export const Planets = (props) => {
 	  <div className="planetsContainer">
 		  {planetsList}
 	  </div>
-      
+    
+
     </>
   );
 };
