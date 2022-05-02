@@ -15,7 +15,7 @@ export const Planets = (props) => {
           <p className="card-text">
           Climate: {planet.info?.climate}
           </p>
-          <Link to={`/planets/${planet.uid}`} className="btn btn-primary" >
+          <Link to={'/planets/' + planet.uid} className="btn btn-primary" >
             Details
           </Link>
         </div>

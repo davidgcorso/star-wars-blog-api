@@ -32,12 +32,11 @@ const Layout = () => {
 						<Route exact path="/planets">
 							<Planets />
 						</Route>
-						<Route>
-							<PlanetDetails exact path={`/planets/:theid`}/>
-
+						<Route exact path="/vehicles">
+							<Vehicles />
 						</Route>
-						<Route>
-							<Vehicles exact path="/vehicles"/>
+						<Route exact path={`/planets/:theid`}>
+							<PlanetDetails />
 						</Route>
 						<Route>
 							<h1>Not found!</h1>
