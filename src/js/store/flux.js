@@ -27,9 +27,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					
 			
 			},
-			getPlanetProps: () => {
-
-			}
+			
 		},
 	}
 }
