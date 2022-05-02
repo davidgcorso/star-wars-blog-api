@@ -1,6 +1,7 @@
 import React from "react";
 import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.css";
+import { Link } from "react-router-dom";
 
 export const Home = () => (
   <div className="text-center mt-5">
@@ -22,9 +23,9 @@ export const Home = () => (
                   Check the best characters in the Star Wars universe! From Luke
                   Skywalker to the evil Darth Vader.
                 </p>
-                <a href="#" className="btn btn-warning">
+                <Link to="/characters" className="btn btn-warning">
                   Go to Characters!
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -41,9 +42,9 @@ export const Home = () => (
                   The Star Wars story happens on a stretch of several and
                   hostile planets. Come check them out!
                 </p>
-                <a href="#" className="btn btn-warning">
+                <Link to="/planets" className="btn btn-warning">
                   Go to Planets!
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -60,9 +61,9 @@ export const Home = () => (
                   What is a republic pilot without his ship? How could Han
                   go across the galaxy without the Millenial Falcon?
                 </p>
-                <a href="#" className="btn btn-warning">
+                <Link to="/vehicles" className="btn btn-warning">
                   Go to vehicles!
-                </a>
+                </Link>
               </div>
             </div>
           </div>

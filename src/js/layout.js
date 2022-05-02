@@ -28,11 +28,11 @@ const Layout = () => {
 						<Route exact path="/characters">
 							<Characters />
 						</Route>
-						<Route exact path="/planets/:theid">
+						<Route exact path="/planets">
 							<Planets />
 						</Route>
 						<Route>
-							<Vehicles />
+							<Vehicles exact path="/vehicles"/>
 						</Route>
 						<Route>
 							<h1>Not found!</h1>
