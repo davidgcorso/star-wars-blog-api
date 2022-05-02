@@ -31,12 +31,26 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getVehicles: () => {
 				fetch('https://www.swapi.tech/api/vehicles')
 					.then((response) => response.json())
-					.then((data) => {console.log(data);setStore( { vehicles: data })})
-
-
-		},
+					.then((data) => data)
+					.then( async data => {
+						const { results } = data;
+						results.forEach(async (vehicle, index) => {
+									
+								const resp = await fetch(vehicle.url)
+								const info = await resp.json();
+								data.results[index].info = info.result.properties
+								setStore( {vehicles: data})
+							
+							
+						});
+					})
+						
+					
+			
+			},
 		}
 	}
 }
 
 export default getState;
+

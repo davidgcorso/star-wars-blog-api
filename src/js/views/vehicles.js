@@ -15,9 +15,9 @@ export const Vehicles = (props) => {
           <p className="card-text">
           uid: {vehicle.uid}
           </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <Link to={'/vehicles/' + vehicle.uid} className="btn btn-primary" >
+            Details
+          </Link>
         </div>
       </div>
     );
