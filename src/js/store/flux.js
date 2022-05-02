@@ -10,17 +10,16 @@ const getState = ({ getStore, getActions, setStore }) => {
 			getPlanets: () => {
 				fetch('https://www.swapi.tech/api/planets')
 					.then((response) => response.json())
-					.then((data) => setStore( { planets: data }))
+					.then((data) => data)
 					.then( async data => {
 						const { results } = data;
 						results.forEach(async (planet, index) => {
-							const { attributes } = planet;
-							attributes.forEach(async (planet, i) => {
-								const resp = await fetch(planet)
+									
+								const resp = await fetch(planet.url)
 								const info = await resp.json();
-								data.results[index].attributes[i] = info
+								data.results[index].info = info.result.properties
 								setStore( {planets: data})
-							})
+							
 							
 						});
 					})

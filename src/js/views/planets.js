@@ -13,7 +13,7 @@ export const Planets = (props) => {
         <div className="card-body">
           <h5 className="card-title">{planet.name}</h5>
           <p className="card-text">
-          Climate: {planet.climate}
+          Climate: {planet.info?.climate}
           </p>
           <a href="#" className="btn btn-primary">
             Details
