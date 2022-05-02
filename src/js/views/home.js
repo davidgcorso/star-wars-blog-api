@@ -4,6 +4,7 @@ import "../../styles/home.css";
 import { Link } from "react-router-dom";
 
 export const Home = () => (
+  
   <div className="text-center mt-5">
     <h1 className="title">Welcome, chosen one!</h1>
     <h3>May the force be with you, always...</h3>
