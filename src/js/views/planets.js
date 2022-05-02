@@ -8,15 +8,15 @@ export const Planets = (props) => {
   const params = useParams();
   let planetsList = store.planets.results?.map((planet, index) => {
     return (
-      <div className="card bg-dark" key={index}>
-        <img src="https://static.wikia.nocookie.net/esstarwars/images/6/61/Mustafar-TROSGG.png/revision/latest?cb=20201111174744" className="card-img-top" alt="..." />
+      <div className="card" key={index}>
+        <img src="https://images.immediate.co.uk/production/volatile/sites/4/2018/08/eso0603a-b364432.jpg?quality=90&resize=700,466" className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{planet.name}</h5>
           <p className="card-text">
-          Climate: {planet.climate}
+          Climate: {planet.info?.climate}
           </p>
           <a href="#" className="btn btn-primary">
-            Go somewhere
+            Details
           </a>
         </div>
       </div>

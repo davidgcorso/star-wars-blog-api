@@ -1,4 +1,4 @@
-@import url(https://allfont.net/allfont.css?fonts=star-jedi);
+
 body {
   background-image: url(https://browsecat.net/sites/default/files/star-wars-landscape-wallpapers-121180-468988-5381442.png);
   background-size: cover;
@@ -27,6 +27,7 @@ h3{
     width: 18rem;
     color: rgb(255, 232, 31);
     margin: 10px;
+    background-color: rgb(52, 58, 64, .8);
 }
 .cardsContainer {
     display: flex;
@@ -54,4 +55,7 @@ h3{
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 5px;
+}
+.footer {
+    margin-top: 50px;
 }
