@@ -51,7 +51,7 @@ export const Home = () => (
           <div className="col-md-4 col-sm-12">
             <div className="card bg-dark">
               <img
-                src="https://www.sideshow.com/wp/wp-content/uploads/2018/09/star-wars-speeder-bike-sixth-scale-figure-related-collectible-sideshow-feature-100121.jpg"
+                src="https://www.denofgeek.com/wp-content/uploads/2016/01/millennium-falcon.jpg"
                 className="card-img-top"
                 alt="..."
               />
