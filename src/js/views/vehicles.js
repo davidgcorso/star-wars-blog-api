@@ -28,7 +28,7 @@ export const Vehicles = (props) => {
   return (
     <>
       <h1 className="title text-center">Ships of Star Wars</h1>
-	  <div className="planetsContainer">
+	  <div className="planetsContainer animate__animated animate__fadeInLeftBig">
 		  {vehiclesList}
 	  </div>
       
