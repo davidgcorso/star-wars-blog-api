@@ -25,7 +25,7 @@ export const VehicleDetails = () => {
         {store.singleVehicle?.result.properties.name}
       </h1>
       <div className="itemDescription">
-          <p className="card paragraph">{name}, model: {model} is a {vehicle_class} class ship, his lenght is {length}. <br /> 
+          <p className="card paragraph">{name}, model: {model} is a {vehicle_class} class ship, his lenght is {length}''. <br /> 
           The ship costs $ {cost_in_credits} and the manufacturer is {manufacturer}. <br />
           <hr />
           <h2>Capacity:</h2> <br />
