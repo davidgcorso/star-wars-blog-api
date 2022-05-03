@@ -21,6 +21,15 @@ const getState = ({ getStore, getActions, setStore }) => {
             });
           });
       },
+      getSinglePlanet: (id) => {
+        fetch("https://www.swapi.tech/api/planets/" + id)
+          .then((response) => response.json())
+          .then((data) => {console.log(data); 
+			setStore({ singlePlanet: data })
+		});
+		  
+      },
+
 
       getVehicles: () => {
         fetch("https://www.swapi.tech/api/vehicles")
