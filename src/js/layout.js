@@ -10,7 +10,9 @@ import 'animate.css';
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { PlanetDetails } from "./views/planetdetails";
+
 import { People } from "./views/people";
+
 
 //create your first component
 const Layout = () => {

@@ -1,43 +1,37 @@
 import React, { useState, useEffect, useContext } from "react";
-import { Link } from "react-router-dom";
-
+import PropTypes from "prop-types";
+import { Link, useParams } from "react-router-dom";
 import { Context } from "../store/appContext";
 
-import "../../styles/demo.css";
+export const Vehicles = (props) => {
+  const { store, actions } = useContext(Context);
+  const params = useParams();
+  let vehiclesList = store.vehicles.results?.map((vehicle, index) => {
+    return (
+      <div className="card " key={index}>
+        <img src="https://media.contentapi.ea.com/content/dam/eacom/en-us/migrated-images/2016/11/news-article-images-ships-blog-image-16x9.jpg.adapt.crop16x9.575p.jpg" className="card-img-top" alt="..." />
+        <div className="card-body">
+          <h5 className="card-title">{vehicle.name}</h5>
+          <p className="card-text">
+          uid: {vehicle.uid}
+          </p>
+          <Link to={'/vehicles/' + vehicle.uid} className="btn btn-primary" >
+            Details
+          </Link>
+        </div>
+      </div>
+    );
+  });
 
-export const Vehicles = () => {
-	const { store, actions } = useContext(Context);
+  console.log(store.vehicles.results);
 
-	return (
-		<div className="container">
-			<ul className="list-group">
-				{store.demo.map((item, index) => {
-					return (
-						<li
-							key={index}
-							className="list-group-item d-flex justify-content-between"
-							style={{ background: item.background }}>
-							<Link to={"/vehicles/" + index}>
-								<span>Link to: {item.title}</span>
-							</Link>
-							{// Conditional render example
-							// Check to see if the background is orange, if so, display the message
-							item.background === "orange" ? (
-								<p style={{ color: item.initial }}>
-									Check store/flux.js scroll to the actions to see the code
-								</p>
-							) : null}
-							<button className="btn btn-success" onClick={() => actions.changeColor(index, "orange")}>
-								Change Color
-							</button>
-						</li>
-					);
-				})}
-			</ul>
-			<br />
-			<Link to="/">
-				<button className="btn btn-primary">Back home</button>
-			</Link>
-		</div>
-	);
+  return (
+    <>
+      <h1 className="title text-center">Ships of Star Wars</h1>
+	  <div className="planetsContainer animate__animated animate__fadeInLeftBig">
+		  {vehiclesList}
+	  </div>
+      
+    </>
+  );
 };

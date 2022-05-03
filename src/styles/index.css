@@ -1,9 +1,10 @@
-@import url(https://allfont.net/allfont.css?fonts=star-jedi);
+
 body {
   background-image: url(https://browsecat.net/sites/default/files/star-wars-landscape-wallpapers-121180-468988-5381442.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: black;
+ 
 }
 
 
@@ -25,10 +26,50 @@ h3{
 .card{
     width: 18rem;
     color: rgb(255, 232, 31);
+    margin: 10px;
+    background-color: rgb(52, 58, 64, .8);
 }
 .cardsContainer {
     display: flex;
+    
+    
     width: 100%;
     justify-content: space-around;
     margin-top: 80px;
+}
+.dataContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.footerText {
+    color: white;
+}
+.planetsContainer  {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.vehiclesContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+}
+.footer {
+    margin-top: 50px;
+}
+.itemDescription{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    padding: 10px;
+    width: 100%;
+}
+.paragraph {
+    padding: 30px;
+    width: 60%;
 }
