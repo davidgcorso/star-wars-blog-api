@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import { Vehicles } from "./views/vehicles";
 import { Home } from "./views/home";
-import { Characters } from "./views/characters";
+
 import { Planets } from "./views/planets";
 import injectContext from "./store/appContext";
 import 'animate.css';

@@ -24,7 +24,7 @@ export const Home = () => (
                   Check the best characters in the Star Wars universe! From Luke
                   Skywalker to the evil Darth Vader.
                 </p>
-                <Link to="/characters" className="btn btn-warning">
+                <Link to="/people" className="btn btn-warning">
                   Go to Characters!
                 </Link>
               </div>
