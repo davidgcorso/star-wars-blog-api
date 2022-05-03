@@ -22,22 +22,22 @@ export const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link active" aria-current="page" href="#">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" to="/people">
                 People
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="#">
+              <Link className="nav-link" to="/vehicles">
                 Ships
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link ">Planets</Link>
+              <Link className="nav-link " to='/planets'>Planets</Link>
             </li>
           </ul>
         </div>
