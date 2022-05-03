@@ -46,7 +46,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 			  });
 			});
 		},
-
+		getSingleVehicle: (id) => {
+			fetch("https://www.swapi.tech/api/vehicles/" + id)
+			  .then((response) => response.json())
+			  .then((data) => {console.log(data); 
+				setStore({ singleVehicle: data })
+			});
+			  
+		},
 
 		getPeople: () => {
 			fetch("https://www.swapi.tech/api/people")

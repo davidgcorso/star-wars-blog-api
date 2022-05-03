@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import ScrollToTop from "./component/scrollToTop";
 import { Vehicles } from "./views/vehicles";
+import { VehicleDetails } from "./views/vehicledetails";
 import { Home } from "./views/home";
 
 import { Planets } from "./views/planets";
@@ -10,6 +11,7 @@ import "animate.css";
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { PlanetDetails } from "./views/planetdetails";
+
 
 import { People } from "./views/people";
 
@@ -39,6 +41,9 @@ const Layout = () => {
             </Route>
             <Route exact path={`/planets/:id`}>
               <PlanetDetails />
+            </Route>
+            <Route exact path={`/vehicles/:id`}>
+              <VehicleDetails />
             </Route>
             <Route>
               <h1 className="title text-center">Not found!</h1>
