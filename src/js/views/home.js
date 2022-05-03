@@ -4,14 +4,15 @@ import "../../styles/home.css";
 import { Link } from "react-router-dom";
 
 export const Home = () => (
+  
   <div className="text-center mt-5">
-    <h1 className="title">Welcome, chosen one!</h1>
-    <h3>May the force be with you, always...</h3>
     <div className="container">
+    <h1 className="title animate__animated animate__fadeIn">Welcome, chosen one!</h1>
+    <h3 className="animate__animated animate__fadeIn animate__delay-2s	">May the force be with you, always...</h3>
       <div className="row">
         <div className="cardsContainer">
-          <div className="col-md-4 col-sm-12">
-            <div className="card bg-dark">
+          <div className=" col">
+            <div className="card bg-dark animate__animated animate__fadeInRightBig">
               <img
                 src="https://www.denofgeek.com/wp-content/uploads/2013/04/star_wars_1.jpg?fit=1280%2C800"
                 className="card-img-top"
@@ -29,8 +30,8 @@ export const Home = () => (
               </div>
             </div>
           </div>
-          <div className="col-md-4 col-sm-12">
-            <div className="card bg-dark">
+          <div className="col">
+            <div className="card bg-dark animate__animated animate__fadeInRightBig">
               <img
                 src="https://scitechdaily.com/images/Kepler-16b-1-scaled.jpg"
                 className="card-img-top"
@@ -48,8 +49,8 @@ export const Home = () => (
               </div>
             </div>
           </div>
-          <div className="col-md-4 col-sm-12">
-            <div className="card bg-dark">
+          <div className="col">
+            <div className="card bg-dark animate__animated animate__fadeInRightBig">
               <img
                 src="https://www.denofgeek.com/wp-content/uploads/2016/01/millennium-falcon.jpg"
                 className="card-img-top"

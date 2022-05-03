@@ -6,7 +6,7 @@ import { Home } from "./views/home";
 import { Characters } from "./views/characters";
 import { Planets } from "./views/planets";
 import injectContext from "./store/appContext";
-
+import 'animate.css';
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
 import { PlanetDetails } from "./views/planetdetails";
@@ -35,7 +35,7 @@ const Layout = () => {
 						<Route exact path="/vehicles">
 							<Vehicles />
 						</Route>
-						<Route exact path={`/planets/:theid`}>
+						<Route exact path={`/planets/:id`}>
 							<PlanetDetails />
 						</Route>
 						<Route>

@@ -28,7 +28,7 @@ export const Planets = (props) => {
   return (
     <>
       <h1 className="title text-center">Planets of Star Wars</h1>
-	  <div className="planetsContainer">
+	  <div className="planetsContainer animate__animated animate__fadeInRightBig">
 		  {planetsList}
 	  </div>
     
