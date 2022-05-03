@@ -15,9 +15,9 @@ export const Vehicles = (props) => {
           <p className="card-text">
           uid: {vehicle.uid}
           </p>
-          <a href="#" className="btn btn-primary">
-            Go somewhere
-          </a>
+          <Link to={'/vehicles/' + vehicle.uid} className="btn btn-primary" >
+            Details
+          </Link>
         </div>
       </div>
     );
@@ -28,7 +28,7 @@ export const Vehicles = (props) => {
   return (
     <>
       <h1 className="title text-center">Ships of Star Wars</h1>
-	  <div className="planetsContainer">
+	  <div className="planetsContainer animate__animated animate__fadeInLeftBig">
 		  {vehiclesList}
 	  </div>
       
