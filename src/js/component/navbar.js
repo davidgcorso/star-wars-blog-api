@@ -41,6 +41,9 @@ export const Navbar = () => {
             <li className="nav-item">
               <Link className="nav-link " to='/planets'>Planets</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link " to='/favorites'>Favorites</Link>
+            </li>
           </ul>
         </div>
       </div>

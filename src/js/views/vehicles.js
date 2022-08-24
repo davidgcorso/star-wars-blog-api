@@ -6,6 +6,13 @@ import { Context } from "../store/appContext";
 export const Vehicles = (props) => {
   const { store, actions } = useContext(Context);
   const params = useParams();
+
+  const addToFavorites = (item) =>{
+
+    store.favorites.push(item)
+    console.log(store.favorites)
+  }
+  
   let vehiclesList = store.vehicles.results?.map((vehicle, index) => {
     return (
       <div className="card" key={index}>
@@ -26,6 +33,7 @@ export const Vehicles = (props) => {
           <button
             to={""}
             className="btn btn-outline-warning float-end"
+            onClick={() => {addToFavorites(vehicle)}}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +51,7 @@ export const Vehicles = (props) => {
     );
   });
 
-  /* console.log(store.vehicles.results); */
+  
 
   return (
     <>

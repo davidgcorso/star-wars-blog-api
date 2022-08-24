@@ -6,8 +6,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 		vehicles: [],
 		people: [],
 		planetsData: [],
+		vehiclesFavorites: [],
 	  },
 	  actions: {
+	
 		getPlanets: () => {
 		  fetch("https://www.swapi.tech/api/planets")
 			.then((response) => response.json())
@@ -69,6 +71,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 				});
 			  });
 		  },
+		addToFavorites: () => {
+
+
+		}
 	  },
 	};
   };
