@@ -6,6 +6,13 @@ import { Context } from "../store/appContext";
 export const Planets = (props) => {
   const { store, actions } = useContext(Context);
   const params = useParams();
+
+  const addToFavorites = (item) =>{
+
+    store.planetsFavorites.push(item)
+    console.log(store.planetsFavorites)
+  }
+
   let planetsList = store.planets.results?.map((planet, index) => {
     return (
       <div className="card" key={index}>
@@ -22,6 +29,7 @@ export const Planets = (props) => {
              <button
             to={""}
             className="btn btn-outline-warning float-end"
+            onClick={() => {addToFavorites(planet)}}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
