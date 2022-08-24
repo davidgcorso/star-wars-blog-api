@@ -9,8 +9,8 @@ export const Vehicles = (props) => {
 
   const addToFavorites = (item) =>{
 
-    store.favorites.push(item)
-    console.log(store.favorites)
+    store.vehiclesFavorites.push(item)
+    console.log(store.vehiclesFavorites)
   }
   
   let vehiclesList = store.vehicles.results?.map((vehicle, index) => {
