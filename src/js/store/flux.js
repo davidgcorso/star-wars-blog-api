@@ -8,7 +8,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		planetsData: [],
 		vehiclesFavorites: [],
 		planetsFavorites: [],
-		personFavorites: [],
+		peopleFavorites: [],
 	  },
 	  actions: {
 	
@@ -73,10 +73,15 @@ const getState = ({ getStore, getActions, setStore }) => {
 				});
 			  });
 		  },
-		addToFavorites: () => {
-
-
-		}
+		  getSinglePerson: (id) => {
+			fetch("https://www.swapi.tech/api/people/" + id)
+			  .then((response) => response.json())
+			  .then((data) => {console.log(data); 
+				setStore({ singlePerson: data })
+			});
+			  
+		},
+		
 	  },
 	};
   };
